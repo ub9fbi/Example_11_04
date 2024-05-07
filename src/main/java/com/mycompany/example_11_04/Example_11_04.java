@@ -126,12 +126,12 @@ public class Example_11_04 extends javax.swing.JFrame {
 
         jLabelDepart.setText("До отправления");
 
-        /*jButtonCalcDeparTime.setText("Расчет времени до отправления");
+        jButtonCalcDeparTime.setText("Расчет времени до отправления");
         jButtonCalcDeparTime.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonCalcDeparTimeActionPerformed(evt);
             }
-        });*/
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -300,7 +300,7 @@ public class Example_11_04 extends javax.swing.JFrame {
         setTrain();
         for (int i = 0; i < trainArrayList.size(); i++) {
             trainArrayList.get(i).sumTimeSecond();
-            trainArrayList.get(i).calculateMinutesToDeparture();
+            
         }
         getTrain();
     }//GEN-LAST:event_jButtonCalcTimeSecondsActionPerformed
@@ -313,13 +313,13 @@ public class Example_11_04 extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButtonPlus_5_secActionPerformed
 
-    /*private void jButtonCalcDeparTimeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCalcDeparTimeActionPerformed
+    private void jButtonCalcDeparTimeActionPerformed(java.awt.event.ActionEvent evt) {                                                     
         // TODO add your handling code here:
         setTrain();
         for (int i = 0; i < trainArrayList.size(); i++) {
-
+            trainArrayList.get(i).calculateMinutesToDeparture();
         }
-    }//GEN-LAST:event_jButtonCalcDeparTimeActionPerformed*/
+    }                                                      
 
     //  метод копирования данных из обьекта в текстовые поля формы
     protected void getTrain() {
