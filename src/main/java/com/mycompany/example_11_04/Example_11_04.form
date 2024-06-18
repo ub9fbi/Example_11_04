@@ -35,45 +35,10 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace pref="123" max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jLabelMin" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelHour" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelSec" alignment="1" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              <Component id="jSpinnerCrn" min="-2" pref="45" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jTextFieldCount" min="-2" pref="93" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jTextFieldTimeSec" alignment="1" max="32767" attributes="0"/>
-                          <Component id="jTextFieldTimeMin" alignment="1" max="32767" attributes="0"/>
-                          <Group type="102" attributes="0">
-                              <Component id="jButtonNewTrain" min="-2" pref="86" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButtonDeleteTrain" min="-2" pref="84" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="jTextFieldTimeHour" alignment="1" max="32767" attributes="0"/>
-                      </Group>
-                  </Group>
                   <Component id="jLabelTitleTime" alignment="0" max="32767" attributes="0"/>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
-                              <Component id="jButtonCalcTimeSeconds" max="32767" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButtonPlus_5_sec" min="-2" pref="83" max="-2" attributes="0"/>
-                          </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="jLabelNumbTrain" min="-2" max="-2" attributes="0"/>
@@ -106,6 +71,47 @@
                   <Component id="jButtonCalcDeparTime" max="32767" attributes="0"/>
                   <Component id="jLabelTrainDepartureTime" alignment="0" max="32767" attributes="0"/>
                   <Component id="jLabelDepartureTime" alignment="1" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel2" min="-2" pref="93" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                              <Component id="jTextFieldCount" min="-2" pref="93" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jLabelMin" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelHour" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelSec" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jSpinnerCrn" min="-2" pref="45" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jButtonCalcTimeSeconds" min="-2" pref="87" max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Component id="jTextFieldTimeSec" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldTimeMin" alignment="1" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      <Component id="jButtonNewTrain" min="-2" pref="86" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jButtonDeleteTrain" min="-2" pref="84" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jTextFieldTimeHour" alignment="1" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
+                              <Component id="jButtonPlus_5_sec" min="-2" pref="83" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -136,12 +142,14 @@
                   <Component id="jButtonNewTrain" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jButtonDeleteTrain" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jSpinnerCrn" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextFieldCount" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jButtonPlus_5_sec" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jButtonCalcTimeSeconds" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextFieldCount" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
@@ -310,6 +318,18 @@
     <Component class="javax.swing.JTextField" name="jTextFieldTimeSec">
     </Component>
     <Component class="javax.swing.JTextField" name="jTextFieldCount">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="&#x412;&#x44b;&#x431;&#x43e;&#x440; &#x44f;&#x447;&#x435;&#x439;&#x43a;&#x438;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="&#x422;&#x435;&#x43a;&#x443;&#x449;&#x430;&#x44f; &#x44f;&#x447;&#x435;&#x439;&#x43a;&#x430;"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>

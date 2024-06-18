@@ -16,6 +16,6 @@ public class Train extends Time {
     public String minutesBeforeTrainDeparts;
 
     public void calculateMinutesToDeparture(){
-        minutesBeforeTrainDeparts = String.valueOf((departureHour - hour) * 60 + (departureMin - min));
+        minutesBeforeTrainDeparts = String.valueOf((departureHour - hour) * 60 + (departureMin - min)+ " Минут");
     }
 }
