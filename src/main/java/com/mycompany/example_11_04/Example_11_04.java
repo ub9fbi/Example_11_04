@@ -72,7 +72,7 @@ public class Example_11_04 extends javax.swing.JFrame {
 
         jLabelSec.setText("Секунды");
 
-        jButtonNewTrain.setText("Save");
+        jButtonNewTrain.setText("New");
         jButtonNewTrain.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonNewTrainActionPerformed(evt);
@@ -116,6 +116,8 @@ public class Example_11_04 extends javax.swing.JFrame {
 
         jLabelTrainDepartureTime.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelTrainDepartureTime.setText("Время отправления поезда");
+
+        jTextFieldHourDepartTrain.setToolTipText("");
 
         jLabelDepartHour.setText("Часы");
 
@@ -300,6 +302,7 @@ public class Example_11_04 extends javax.swing.JFrame {
         setTrain();
         for (int i = 0; i < trainArrayList.size(); i++) {
             trainArrayList.get(i).sumTimeSecond();
+            trainArrayList.get(i).calculateMinutesToDeparture();
             
         }
         getTrain();
@@ -317,7 +320,7 @@ public class Example_11_04 extends javax.swing.JFrame {
         // TODO add your handling code here:
         setTrain();
         for (int i = 0; i < trainArrayList.size(); i++) {
-            trainArrayList.get(i).calculateMinutesToDeparture();
+
         }
     }                                                      
 
@@ -331,7 +334,7 @@ public class Example_11_04 extends javax.swing.JFrame {
             jTextDirectTrain.setText(trainArrayList.get(currentInd).directionTrain);
             jTextFieldHourDepartTrain.setText("" + trainArrayList.get(currentInd).departureHour);
             jTextFieldMinDepartTrain.setText("" + trainArrayList.get(currentInd).departureMin);
-            jTextFieldMinutesBeforeTrainDeparts.setText(trainArrayList.get(currentInd).minutesBeforeTrainDeparts);
+            jTextFieldMinutesBeforeTrainDeparts.setText(trainArrayList.get(currentInd).minutesBeforeTrainDeparts + " Минут");
         }
     }
     //  метод записи в поля обьекта данные из текстовых полей формы
